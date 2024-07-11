@@ -4,8 +4,12 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('welcome_message');
+        $data = [
+            'title' => 'Seri Tutorial CodeIgniter 4: Login dan Register @ qadrlabs.com'
+        ];
+
+        return view('home', $data);
     }
 }
